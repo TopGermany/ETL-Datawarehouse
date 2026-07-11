@@ -1,0 +1,10 @@
+﻿segment_id,segment_code,nationality_group,nationality_detail,booking_purpose,los_group,group_size_category,default_adults,default_children
+1,DOM-LEISURE-1N,Domestic,Viet Nam,Leisure,1 night,Couple,2,0
+2,DOM-FAMILY-2N,Domestic,Viet Nam,Leisure,2-3 nights,Family,2,1
+3,DOM-GROUP-3N,Domestic,Viet Nam,Leisure,2-3 nights,Group,3,0
+4,DOM-BUSINESS-1N,Domestic,Viet Nam,Business,1 night,Solo,1,0
+5,INT-KR-LEISURE,International,Korea,Leisure,2-3 nights,Couple,2,0
+6,INT-CN-GROUP,International,China,Leisure,2-3 nights,Group,3,0
+7,INT-WEST-LONG,International,Europe/America/Australia,Leisure,4+ nights,Couple,2,0
+8,INT-BUSINESS-1N,International,International,Business,1 night,Solo,1,0
+9,MICE-GROUP-2N,Domestic,Viet Nam,MICE,2-3 nights,Group,2,0

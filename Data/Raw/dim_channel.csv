@@ -1,0 +1,8 @@
+﻿channel_id,channel_code,channel_name,channel_type,platform_name,standard_commission_pct,is_ota,is_direct
+1,OTA_AGODA,Agoda,OTA,Agoda,18.0,1,0
+2,OTA_BOOKING,Booking.com,OTA,Booking.com,20.0,1,0
+3,OTA_TRAVELOKA,Traveloka,OTA,Traveloka,15.0,1,0
+4,OTA_OTHER,Other OTA,OTA,Other OTA,17.0,1,0
+5,DIRECT_WEB,Hotel Website,Direct,Official Website,0.0,0,1
+6,DIRECT_WALKIN,Walk-in / Phone,Direct,Front Desk,0.0,0,1
+7,TA_LOCAL,Local Travel Agent,Travel_Agent,Local TA,10.0,0,0

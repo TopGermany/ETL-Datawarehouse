@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  airflow-standalone:
+    build: .
+    container_name: haian_airflow
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount các thư mục vào máy ảo để code chạy lấy dữ liệu
+      - ./dags:/opt/airflow/dags
+      - ./agents:/opt/airflow/agents
+      - ./scrapers:/opt/airflow/scrapers
+      - ./Data:/opt/airflow/Data
+      # Lưu ý: file .env sẽ được Airflow load tự động hoặc truyền qua môi trường
+    env_file:
+      - ./agents/.env
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      # Đè đường dẫn Windows trong .env bằng đường dẫn Linux của Container
+      - CSV_DATA_DIR=/opt/airflow/Data/Raw
+      - GOOGLE_CREDENTIALS_PATH=/opt/airflow/agents/haian-dwh-project-2254500c760c.json
+      - LOG_FILE=/opt/airflow/agents/logs/etl_agent.log
+      - PYTHONPATH=/opt/airflow
+    command: >
+      bash -c "airflow db init && 
+      airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com && 
+      airflow standalone"

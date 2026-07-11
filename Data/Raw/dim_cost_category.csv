@@ -1,0 +1,10 @@
+﻿cost_category_id,cost_code,cost_name,cost_type,department,is_fixed_cost,is_variable_cost
+1,LABOR_HK,Housekeeping labor,Labor,Housekeeping,0,1
+2,LABOR_FD,Front desk labor,Labor,Front Desk,1,0
+3,UTIL_ELEC,Electricity,Operating,Engineering,0,1
+4,UTIL_WATER,Water,Operating,Engineering,0,1
+5,MAINT,Maintenance and repair,Operating,Engineering,0,1
+6,CLEANING,Cleaning supplies and laundry,Operating,Housekeeping,0,1
+7,BREAKFAST_COGS,Breakfast COGS,Operating,F&B,0,1
+8,ROOM_AMENITIES,Room amenities,Operating,Housekeeping,0,1
+9,MKTG_DIRECT,Direct channel marketing,Distribution,Sales & Marketing,1,0

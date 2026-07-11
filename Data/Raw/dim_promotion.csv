@@ -1,0 +1,7 @@
+﻿promotion_id,promotion_code,promotion_name,promotion_type,discount_pct,hotel_funded_pct,start_date,end_date,target_channel_type
+0,NONE,No promotion,None,0.0,0.0,2025-06-01,2025-08-31,All
+1,SUMMER_DIRECT_8,HAIAN Summer Direct 8%,Direct Discount,8.0,100.0,2025-06-01,2025-08-31,Direct
+2,OTA_FLASH_12,OTA Flash Sale 12%,OTA Voucher,12.0,70.0,2025-06-01,2025-08-31,OTA
+3,FAMILY_BREAKFAST,Family Breakfast Bundle,Bundle,5.0,100.0,2025-06-10,2025-08-25,All
+4,LONG_STAY_3N,Long Stay 3+ Nights,Length-of-stay Discount,10.0,100.0,2025-06-01,2025-08-31,All
+5,TA_GROUP_NET,Travel Agent Group Net Rate,Negotiated Rate,7.0,100.0,2025-06-01,2025-08-31,Travel_Agent

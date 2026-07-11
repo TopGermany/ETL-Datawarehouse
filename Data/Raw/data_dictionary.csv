@@ -1,0 +1,49 @@
+﻿table_name,column_name,data_type,description
+fact_booking,booking_id,STRING,Unique simulated booking transaction ID.
+fact_booking,customer_id,STRING,Pseudonymous customer ID; no personal identifying information.
+fact_booking,booking_date,DATE,Date when booking was created; may precede peak stay dates by lead_time_days.
+fact_booking,checkin_date,DATE,Arrival date for the booking.
+fact_booking,checkout_date,DATE,Departure date; must be after checkin_date.
+fact_booking,stay_nights,INTEGER,Number of paid nights in the booking.
+fact_booking,room_type_id,INTEGER,Foreign key to dim_room_type.
+fact_booking,channel_id,INTEGER,Foreign key to dim_channel.
+fact_booking,segment_id,INTEGER,Foreign key to dim_guest_segment.
+fact_booking,promotion_id,INTEGER,Foreign key to dim_promotion.
+fact_booking,lead_time_days,INTEGER,Days between booking_date and checkin_date.
+fact_booking,booking_status,STRING,CONFIRMED or CANCELLED; cancelled bookings have no occupied room-night.
+fact_booking,gross_room_revenue,INTEGER,"Guest-paid room revenue after discount, before commission."
+fact_booking,commission_amount,INTEGER,Channel commission amount.
+fact_booking,promotion_cost,INTEGER,Hotel-funded discount/voucher cost.
+fact_booking,contribution_profit,INTEGER,Booking-level contribution after commission and direct variable costs.
+fact_room_revenue_daily,stay_date,DATE,Room-night consumption date.
+fact_room_revenue_daily,rooms_sold,INTEGER,Number of occupied room-nights for this grain.
+fact_room_revenue_daily,gross_room_revenue,INTEGER,Room revenue at daily grain.
+fact_room_revenue_daily,net_room_revenue,INTEGER,Gross room revenue minus commission.
+fact_room_revenue_daily,room_contribution_profit,INTEGER,"Room-level contribution after commission, promotion cost and direct variable costs."
+fact_room_inventory_daily,sellable_rooms,INTEGER,Rooms available for sale after out-of-order maintenance holds.
+fact_room_inventory_daily,rooms_out_of_order,INTEGER,Rooms temporarily unavailable due to maintenance.
+mart_profitpar_daily,profitpar,FLOAT,Profit after distribution divided by rooms_available.
+mart_profitpar_daily,target_profitpar_2026,INTEGER,"Management target used in the report: 765,000 VND per available room."
+mart_profitpar_daily,gap_to_target_profitpar,FLOAT,Target ProfitPAR minus actual ProfitPAR.
+fact_competitor_price_snapshot_template,snapshot_id,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,snapshot_datetime,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,checkin_date,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,checkout_date,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,search_los,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,source_platform,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,competitor_hotel_name,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,star_rating,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,location_area,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,room_type_raw,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,mapped_room_type_id,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,listed_price_vnd,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,discounted_price_vnd,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,discount_rate_pct,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,is_sold_out,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,rooms_left,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,cancellation_policy,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,breakfast_included,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,rating_score,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,review_count,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,scrape_status,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.
+fact_competitor_price_snapshot_template,created_at,STRING/NUMERIC,Header-only template for future OTA scraping data; intentionally left without competitor rows.

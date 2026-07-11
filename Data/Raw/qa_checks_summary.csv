@@ -1,0 +1,9 @@
+﻿check_name,status,details
+No room type overbooking by stay_date,PASS,violations=0
+booking_id uniqueness,PASS,rows=8248
+all confirmed checkout after checkin,PASS,date validity
+gross revenue non-negative,PASS,booking gross_room_revenue >= 0
+season stay dates in Jun-Aug 2025,PASS,room-night grain
+simulated cancellation rate,INFO,9.49% of booking records
+simulated average review score,INFO,4.45/5
+overall ProfitPAR vs target,INFO,"avg ProfitPAR=550,121 VND; target 2026=765,000 VND"

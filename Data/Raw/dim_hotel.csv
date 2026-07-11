@@ -1,0 +1,291 @@
+hotel_id,hotel_code,hotel_name,hotel_type,star_rating,total_rooms,address,location_area,distance_to_beach_m,has_pool,has_spa,has_restaurant,data_source
+-1,UNKNOWN,Unknown Competitor,Competitor,0,0,Unknown,Unknown,0,0,0,0,Unknown
+1,HAIAN,HAIAN Beach Hotel & Spa,Internal,4,214,"278 Vo Nguyen Giap, Da Nang",My Khe Beach / My An,50,1,1,1,Simulated PMS based on public hotel profile
+2,MUONG_THANH,Muong Thanh Luxury Da Nang Hotel,Competitor,5,583,"270 Vo Nguyen Giap, Da Nang",My Khe Beach / My An,50,1,1,1,Competitor Profile
+3,SALA,Sala Danang Beach Hotel,Competitor,4,162,"36 Lam Hoanh, Da Nang",My Khe Beach / My An,100,1,1,1,Competitor Profile
+4,STELLA,Stella Maris Beach Danang,Competitor,4,97,"03 Vo Van Kiet, Da Nang",My Khe Beach / My An,150,1,1,1,Competitor Profile
+5,NOVOTEL,Novotel Danang Premier Han River,Competitor,5,323,"36 Bach Dang, Da Nang",Han River,3000,1,1,1,Competitor Profile
+6,AUTO_GEN,Son Tra Area - My Khe Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+7,AUTO_GEN,Indo Boutique Apartment - Walk to My Khe Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+8,AUTO_GEN,MangDiang House & Apartment - Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+9,AUTO_GEN,Orange City Center Hotel Da Nang - Near Han Market & Dragon Brigde,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+10,AUTO_GEN,LangX Heaven Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+11,AUTO_GEN,Sen Boutique Villa Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+12,AUTO_GEN,MAIA Boutique Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+13,AUTO_GEN,7 Seven Sea Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+14,AUTO_GEN,Luxury Apartment in Beach Front Building with Ocean View,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+15,AUTO_GEN,FIRST Studio Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+16,AUTO_GEN,Serenity Retreat,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+17,AUTO_GEN,Sekong Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+18,AUTO_GEN,Luxury Apartment with Ocean View - 1 minute to beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+19,AUTO_GEN,Royal Lotus Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+20,AUTO_GEN,Sen Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+21,AUTO_GEN,Kim Ngan Phat Luxury,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+22,AUTO_GEN,Minh Toan SAFI Ocean Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+23,AUTO_GEN,Vernal Hotel & Apartment Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+24,AUTO_GEN,Draco Hotel & Suites,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+25,AUTO_GEN,Avatar Danang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+26,AUTO_GEN,Casa Rosa Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+27,AUTO_GEN,DiStay Beachfront Suites - Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+28,AUTO_GEN,CODI SEA Hotel & Travel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+29,AUTO_GEN,Eden Ocean View Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+30,AUTO_GEN,Thè HEM Hotel and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+31,AUTO_GEN,JBay Coastal Residence - DIFF Da Nang Fireworks View,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+32,AUTO_GEN,Dian Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+33,AUTO_GEN,Lantana House Boutique Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+34,AUTO_GEN,Asteria Ocean Residence,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+35,AUTO_GEN,JBAY Beachfront Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+36,AUTO_GEN,THE GRACE An Thuong Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+37,AUTO_GEN,Sea Swan Apartment and Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+38,AUTO_GEN,Señorita Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+39,AUTO_GEN,Kamala Hotel & Apartment Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+40,AUTO_GEN,Century Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+41,AUTO_GEN,Delicate Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+42,AUTO_GEN,Sanayen Villa & Residences - Pool and Close Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+43,AUTO_GEN,The Sail Hotel - My Khe Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+44,AUTO_GEN,Paracel Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+45,AUTO_GEN,Awaken Da Nang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+46,AUTO_GEN,Canvas Danang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+47,AUTO_GEN,Hương Trà Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+48,AUTO_GEN,Thành Hoàng Châu Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+49,AUTO_GEN,Oceanora Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+50,AUTO_GEN,Ocean Star Da Nang Bay Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+51,AUTO_GEN,Star Hotel and Fitness- Free Sauna,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+52,AUTO_GEN,Val Soleil Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+53,AUTO_GEN,Flower Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+54,AUTO_GEN,King House Villa Hotel & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+55,AUTO_GEN,LaDa's House Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+56,AUTO_GEN,Lumina Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+57,AUTO_GEN,Misa Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+58,AUTO_GEN,Cordial Grand Hotel Da Nang Beach - Infinity Rooftop Pool,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+59,AUTO_GEN,Le House Boutique Hotel - 100m to the beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+60,AUTO_GEN,Dong Duong Hotel & Suites - City Central - Afternoon Tea Inclusive,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+61,AUTO_GEN,GG Hotel and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+62,AUTO_GEN,TMH House DDN Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+63,AUTO_GEN,Rest Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+64,AUTO_GEN,Moonlight Hotel & Suites - Highfloor view of the city center and Dragon Bridge,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+65,AUTO_GEN,Ocean Bliss Hotel - Free Sauna,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+66,AUTO_GEN,Seaflow Staycation,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+67,AUTO_GEN,Lya Homestay CMT8 Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+68,AUTO_GEN,Nostalgia Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+69,AUTO_GEN,ELC Luxury Hotel Danang - An Thuong Walking Street,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+70,AUTO_GEN,May Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+71,AUTO_GEN,Infinity Pink Hotel Riverview,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+72,AUTO_GEN,Quoc Thien Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+73,AUTO_GEN,Bona Hostel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+74,AUTO_GEN,TGT BEACH HOTEL,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+75,AUTO_GEN,Mitisa Hotel Da Nang - Near Dragon Bridge,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+76,AUTO_GEN,Smile hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+77,AUTO_GEN,Rio Hotel & Apartment Danang Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+78,AUTO_GEN,The Pergola Design Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+79,AUTO_GEN,Seavitel Danang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+80,AUTO_GEN,Happy Day Riverside Hotel & Spa Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+81,AUTO_GEN,Cami Riverside Resort Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+82,AUTO_GEN,AOA Danang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+83,AUTO_GEN,Ocean Soleil Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+84,AUTO_GEN,Eden Plaza Da Nang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+85,AUTO_GEN,Baan Taley Đà Nẵng Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+86,AUTO_GEN,LAKSHMI APARTMENT & HOTEl DA NANG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+87,AUTO_GEN,Quoc Cuong Hotel & Apartment Danang by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+88,AUTO_GEN,Louis Luxury Apartment & Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+89,AUTO_GEN,Quoc Cuong Center Da Nang Hotel by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+90,AUTO_GEN,Cordial Beach Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+91,AUTO_GEN,Golden Rose Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+92,AUTO_GEN,Menora Grand Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+93,AUTO_GEN,Merry Land Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+94,AUTO_GEN,Dreamy Beach Villas Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+95,AUTO_GEN,Royal Family Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+96,AUTO_GEN,Nguyen Gia Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+97,AUTO_GEN,Sea Wind Hotel by THG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+98,AUTO_GEN,Sofiana My Khe Hotel & Spa - Rooftop Pool Bar - Free 01 Draught Beer and 20-minute Spa per Room,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+99,AUTO_GEN,Prague Da Nang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+100,AUTO_GEN,Golden Lotus Grand Da Nang - Panoramic Rooftop Bar & Daily Afternoon Tea,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+101,AUTO_GEN,Greenery Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+102,AUTO_GEN,Moon House Homestay Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+103,AUTO_GEN,Robin Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+104,AUTO_GEN,Dragon View Riverside Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+105,AUTO_GEN,Star City Riverside Hotel By Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+106,AUTO_GEN,Meliá Vinpearl Danang Riverfront,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+107,AUTO_GEN,Golden Lotus Hotel Da Nang - Rooftop Bar Sea View,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+108,AUTO_GEN,Satya Da Nang Hotel Han Market,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+109,AUTO_GEN,"LUK Inn Hotel - An Thuong, Da Nang",Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+110,AUTO_GEN,ViAn Hotel And Spa Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+111,AUTO_GEN,RHM Luxury Hotel And Suite,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+112,AUTO_GEN,Hôtel de Soie,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+113,AUTO_GEN,Quang Minh Riverside Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+114,AUTO_GEN,Kiên Cường 2 Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+115,AUTO_GEN,Tinahouse -For Vietnamese guests only,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+116,AUTO_GEN,Brilliant Hotel - Afternoon Tea Inclusive,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+117,AUTO_GEN,Sujet Residence Da Nang by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+118,AUTO_GEN,Khang Homestay,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+119,AUTO_GEN,Dreamy Sky - Airport View Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+120,AUTO_GEN,Nest House Homestay,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+121,AUTO_GEN,Vinh Trung Plaza Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+122,AUTO_GEN,Chaca House,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+123,AUTO_GEN,Sunny Ocean Hotel & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+124,AUTO_GEN,Ponte Boutique Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+125,AUTO_GEN,Tashi Oasis Hotel & Apartment Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+126,AUTO_GEN,Titan Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+127,AUTO_GEN,The Glomad Boutique Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+128,AUTO_GEN,Ocean Haven Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+129,AUTO_GEN,Le Boutique Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+130,AUTO_GEN,AVORA Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+131,AUTO_GEN,Cosmos Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+132,AUTO_GEN,Olwen Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+133,AUTO_GEN,Sea Vibe Boutique hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+134,AUTO_GEN,Hilton Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+135,AUTO_GEN,Estrella Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+136,AUTO_GEN,Kaia Residence Danang Quiet Garden,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+137,AUTO_GEN,Mercure Danang French Village Bana Hills,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+138,AUTO_GEN,Tru by Hilton Da Nang City Centre,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+139,AUTO_GEN,Crowne Plaza Danang City Centre by IHG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+140,AUTO_GEN,Riverside Seahorse Danang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+141,AUTO_GEN,Glamour Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+142,AUTO_GEN,ATP Galaxy Hotel & Apartment Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+143,AUTO_GEN,Vista Del Sol Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+144,AUTO_GEN,Mama Hotel And Apartment - Free Sauna And Gym,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+145,AUTO_GEN,"Min Sweet Home 2-Direct View of the fireworks, view Pháo hoa trực diện khán đài",Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+146,AUTO_GEN,Monalisa Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+147,AUTO_GEN,Ruby Star Da Nang - Central My Khe Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+148,AUTO_GEN,Hilton Garden Inn Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+149,AUTO_GEN,Mint Home,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+150,AUTO_GEN,Fivitel Boutique Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+151,AUTO_GEN,Sujet Center Hotel by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+152,AUTO_GEN,Happy House Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+153,AUTO_GEN,The Code Hotel & Spa Da Nang - Complimentary Daily Afternoon Tea in Sky Bar,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+154,AUTO_GEN,De Lamour Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+155,AUTO_GEN,Draco Residence Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+156,AUTO_GEN,Duy's Home,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+157,AUTO_GEN,Danang's house,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+158,AUTO_GEN,Eli Living Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+159,AUTO_GEN,Holiday Beach Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+160,AUTO_GEN,LangX Chapter Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+161,AUTO_GEN,Ciao Boutique Danang - New Hotel Opening April 2026,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+162,AUTO_GEN,Cocorico Da Nang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+163,AUTO_GEN,Minh Toan Athena Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+164,AUTO_GEN,Gom House by BRIO,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+165,AUTO_GEN,Doha Central Bliss Danang Hotel by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+166,AUTO_GEN,Four Points by Sheraton Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+167,AUTO_GEN,Centre Point Da Nang City Hotel - Afternoon Tea Inclusive,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+168,AUTO_GEN,Oday Stay Boutique Hotel Da Nang - 2 Minutes to Dragon Bridge,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+169,AUTO_GEN,Khoi Nguon,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+170,AUTO_GEN,Dolphin Hotel and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+171,AUTO_GEN,Dana Marina Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+172,AUTO_GEN,SWEDEN HOTEL and APARTMENT,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+173,AUTO_GEN,Grand Citiview Da Nang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+174,AUTO_GEN,Lavender Riverside Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+175,AUTO_GEN,Xhome Danang Hotel and Suite,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+176,AUTO_GEN,Natalie Indochine Mountain Villa Da Nang by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+177,AUTO_GEN,Salmalia Boutique Hotel & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+178,AUTO_GEN,Lavencos Hotel Da Nang Sea View - Free Swimming Pool & Sauna,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+179,AUTO_GEN,Mercy Emerald Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+180,AUTO_GEN,Anh Nguyet Da Nang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+181,AUTO_GEN,Golden Lotus Luxury Hotel Danang - Complimentary Daily Afternoon Tea,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+182,AUTO_GEN,Sol Da Nang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+183,AUTO_GEN,Courtyard by Marriott Danang Han River,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+184,AUTO_GEN,Be Sea Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+185,AUTO_GEN,Aluna Residence Homestay,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+186,AUTO_GEN,Ngoc Thuong Hotel & Apartment- Han River View,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+187,AUTO_GEN,MiAn Hotel Danang - Infinity Pool,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+188,AUTO_GEN,DOMA by HSuites Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+189,AUTO_GEN,Elites Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+190,AUTO_GEN,Blue Ocean Beachside Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+191,AUTO_GEN,Seashore Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+192,AUTO_GEN,K House Apartment Danang Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+193,AUTO_GEN,Brilliant Majestic Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+194,AUTO_GEN,Lotus Rock Hotel Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+195,AUTO_GEN,Fusia Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+196,AUTO_GEN,Platinum Danang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+197,AUTO_GEN,Aura Apartment in Son Tra with Swimming Pool,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+198,AUTO_GEN,Grand Sea Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+199,AUTO_GEN,Trang Ngan Hotel by THG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+200,AUTO_GEN,MK Riverside Apartment by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+201,AUTO_GEN,Hyatt Regency Danang Resort and Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+202,AUTO_GEN,Hans Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+203,AUTO_GEN,Ritzy Boutique Hotel Da Nang Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+204,AUTO_GEN,Gold Central Hotel by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+205,AUTO_GEN,The Memory Danang Boutique,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+206,AUTO_GEN,Sea Charm Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+207,AUTO_GEN,LAVISH OCEAN INN Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+208,AUTO_GEN,Dam Tien Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+209,AUTO_GEN,"Wink Danang Riverside, Unscripted by Hyatt - 24 Hours stay",Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+210,AUTO_GEN,Palazzo Luxury Hotel & Bistro - Central My Khe Beach Walking Street,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+211,AUTO_GEN,Sun River Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+212,AUTO_GEN,"Wink Danang Centre, Unscripted by Hyatt - 24 Hours stay",Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+213,AUTO_GEN,ELC Horizon Hotel & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+214,AUTO_GEN,Mỹ Khê Beach 3014,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+215,AUTO_GEN,Bluzen Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+216,AUTO_GEN,Hotel Soco,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+217,AUTO_GEN,Sea Vista Boutique Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+218,AUTO_GEN,Nhat Minh Hotel and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+219,AUTO_GEN,An Hiên Home,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+220,AUTO_GEN,Sheraton Grand Danang Beach Resort & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+221,AUTO_GEN,Halina Hotel and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+222,AUTO_GEN,take me 3seasons - hidden boutique home right at Han Market,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+223,AUTO_GEN,Kay Han Riverfront Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+224,AUTO_GEN,Palazzo Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+225,AUTO_GEN,SHI HOUSE by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+226,AUTO_GEN,La Maison Des Délices,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+227,AUTO_GEN,Palmier Hotel - Art House Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+228,AUTO_GEN,HODI Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+229,AUTO_GEN,Grand Gold Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+230,AUTO_GEN,leonhomestay,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+231,AUTO_GEN,VernalHome Boutique Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+232,AUTO_GEN,Reveur Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+233,AUTO_GEN,BlueSun Danang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+234,AUTO_GEN,Alani Sea View Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+235,AUTO_GEN,Gio Bien 2 Hotel by THG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+236,AUTO_GEN,CiCi Villa Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+237,AUTO_GEN,Richico Apartments And Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+238,AUTO_GEN,Super OYO 266 Golden Gate,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+239,AUTO_GEN,Board & Beyond House,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+240,AUTO_GEN,Record Hotel - Complimentary Afternoon Tea,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+241,AUTO_GEN,My Khe Diamond Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+242,AUTO_GEN,Sofia Suite Hotel & Spa Da Nang - Free 01 Draught Beer and 20-minute Spa per Room,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+243,AUTO_GEN,Lion Homestay,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+244,AUTO_GEN,Sandals Stay Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+245,AUTO_GEN,Seahorse Tropical Natalie Da Nang Hotel by Haviland,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+246,AUTO_GEN,SUMO HOTELS,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+247,AUTO_GEN,White Sand Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+248,AUTO_GEN,Danang Marriott Resort & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+249,AUTO_GEN,Pavilion Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+250,AUTO_GEN,InterContinental Danang Sun Peninsula Resort by IHG,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+251,AUTO_GEN,V-Hotel Da Nang Beach,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+252,AUTO_GEN,Sunview Beach Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+253,AUTO_GEN,Mangata Beachfront Hotel - Rooftop Bar Sea View,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+254,AUTO_GEN,Dai Long Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+255,AUTO_GEN,Zen Lotus Hotel & Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+256,AUTO_GEN,Daisy Boutique Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+257,AUTO_GEN,Saha Casa Boutique Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+258,AUTO_GEN,Aria Grand Hotel & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+259,AUTO_GEN,Da Nang - Mikazuki Japanese Resorts & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+260,AUTO_GEN,Chicland Boutique Danang Beach Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+261,AUTO_GEN,New Orient Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+262,AUTO_GEN,Nhu Minh Plaza Danang Hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+263,AUTO_GEN,Kala Home,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+264,AUTO_GEN,Cosy House Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+265,AUTO_GEN,Roliva Hotel & Apartment Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+266,AUTO_GEN,Lahome Boutique Villa and Apartment,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+267,AUTO_GEN,Grand Tourane Hotel Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+268,AUTO_GEN,Hotel Del Luna Boutique,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+269,AUTO_GEN,Kiwi Beachside Hotel & Cafe Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+270,AUTO_GEN,Cicilia Hotels & Spa Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+271,AUTO_GEN,Seasol Beach Boutique hotel,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+272,AUTO_GEN,Emerald Boutique Hotel DaNang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+273,AUTO_GEN,Monarque Hotel Danang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+274,AUTO_GEN,Amber Bay Hotel & Suites Da Nang,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+275,AUTO_GEN,Mercure Đà Nẵng French Village BanaHills,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+276,AUTO_GEN,InterContinental Đà Nẵng Sun Peninsula Resort,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+277,AUTO_GEN,"Đà Nẵng Marriott Resort & Spa, Non Nước Beach Villas",Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+278,AUTO_GEN,Đà Nẵng - Mikazuki Japanese Resorts & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+279,AUTO_GEN,Đà Nẵng Marriott Resort & Spa,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+280,AUTO_GEN,Khu nghỉ dưỡng TIA Wellness Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+281,AUTO_GEN,Fusion Resort & Villas Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+282,AUTO_GEN,Khách sạn Melia Vinpearl Đà Nẵng Riverfront,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+283,AUTO_GEN,Khu nghỉ dưỡng Furama Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+284,AUTO_GEN,Khách sạn Wyndham Soleil Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+285,AUTO_GEN,Khách sạn Courtyard by Marriott Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+286,AUTO_GEN,Khu nghỉ dưỡng Sheraton Grand Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+287,AUTO_GEN,Khách sạn Radisson RED Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+288,AUTO_GEN,Khách sạn Le Sands Oceanfront Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery
+289,AUTO_GEN,Khách sạn Signature by M Village Beachfront Đà Nẵng,Competitor,0,0,Unknown,Unknown,0,0,0,0,Scraper Auto-Discovery

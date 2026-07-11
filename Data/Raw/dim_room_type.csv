@@ -1,0 +1,10 @@
+﻿room_type_id,room_type_code,room_type_name,view_type,floor_area_sqm,bed_type,max_occupancy,total_rooms,rack_rate_vnd,has_ocean_view
+1,CVO,City View Oasis,City View,28,Twin/King,2,58,1500000,0
+2,PSVO,Partial Sea View Oasis,Partial Sea View,30,Twin/King,2,54,1850000,0
+3,PSVT,Partial Sea View Oasis Triple,Partial Sea View,32,King + Single,3,28,2350000,0
+4,BFO,Beachfront Oasis,Ocean View,30,Twin/King,2,40,2600000,1
+5,BFD,Beachfront Diamond Oasis,Ocean View,45,King,2,18,3300000,1
+6,BFA,Beachfront 1 Bedroom Apartment,Ocean View,50,King,2,8,4200000,1
+7,RP1,Royal Penthouse 1 Bedroom,City View,50,King,2,4,5200000,0
+8,RP2,Royal Penthouse 2 Bedrooms,Partial Sea View/City View,75,Twin + King,4,3,7200000,1
+9,RP3,Royal Penthouse 3 Bedrooms,Ocean/City View,85,Twin + King,6,1,9200000,1

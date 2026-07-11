@@ -1,0 +1,89 @@
+table_name,column_name,data_type,description
+dim_date,date_key,INT,Primary key representing the date (e.g. 20260101)
+dim_date,full_date,DATE,The actual date
+dim_date,day_of_week,VARCHAR,Name of the day (Monday, Tuesday...)
+dim_date,is_weekend,BOOLEAN,True if it is a weekend
+dim_date,month,INT,Month number (1-12)
+dim_date,quarter,INT,Quarter of the year (1-4)
+dim_date,year,INT,Year (e.g. 2026)
+dim_date,season,VARCHAR,Season (Spring, Summer...)
+dim_date,is_holiday,BOOLEAN,True if it is a public holiday
+dim_date,holiday_name,VARCHAR,Name of the holiday if applicable
+dim_hotel,hotel_id,INT,Primary key for hotel
+dim_hotel,hotel_name,VARCHAR,Name of the hotel
+dim_hotel,star_rating,INT,Star rating of the hotel
+dim_hotel,address,VARCHAR,Physical address of the hotel
+dim_hotel,city,VARCHAR,City where the hotel is located
+dim_hotel,total_rooms,INT,Total physical rooms in the hotel
+dim_room_type,room_type_id,INT,Primary key for room type
+dim_room_type,room_type_name,VARCHAR,Name of the room category
+dim_room_type,bed_type,VARCHAR,Type of bed (King, Twin...)
+dim_room_type,view_type,VARCHAR,View from the room (Ocean, City...)
+dim_room_type,max_occupancy,INT,Maximum number of guests allowed
+dim_room_type,room_size_sqm,DECIMAL,Size of the room in square meters
+dim_channel,channel_id,INT,Primary key for booking channel
+dim_channel,channel_name,VARCHAR,Name of the booking channel (e.g. Booking.com)
+dim_channel,channel_category,VARCHAR,Category of channel (OTA, Direct, Corporate...)
+dim_guest_segment,segment_id,INT,Primary key for guest segment
+dim_guest_segment,segment_name,VARCHAR,Name of the segment
+dim_guest_segment,segment_group,VARCHAR,Broader grouping of segment (FIT, GIT, MICE...)
+dim_cost_category,cost_category_id,INT,Primary key for cost category
+dim_cost_category,category_name,VARCHAR,Name of the cost (e.g. Cleaning, Electricity)
+dim_cost_category,is_fixed_cost,BOOLEAN,True if it is a fixed cost, False if variable
+dim_cost_category,department,VARCHAR,Department responsible for the cost
+dim_promotion,promotion_id,INT,Primary key for promotion
+dim_promotion,promotion_name,VARCHAR,Name of the promotional campaign
+dim_promotion,discount_type,VARCHAR,Type of discount (Percentage, Fixed Amount)
+dim_promotion,discount_value,DECIMAL,Value of the discount applied
+fact_booking,booking_id,VARCHAR,Primary key and unique booking transaction ID
+fact_booking,room_type_id,INT,Foreign key to dim_room_type
+fact_booking,channel_id,INT,Foreign key to dim_channel
+fact_booking,segment_id,INT,Foreign key to dim_guest_segment
+fact_booking,promotion_id,INT,Foreign key to dim_promotion
+fact_booking,booking_date,DATE,Date when the booking was made
+fact_booking,check_in_date,DATE,Arrival date
+fact_booking,check_out_date,DATE,Departure date
+fact_booking,lead_time_days,INT,Number of days between booking and check-in
+fact_booking,length_of_stay,INT,Number of nights stayed
+fact_booking,status,VARCHAR,Booking status (Confirmed, Cancelled, No-show)
+fact_room_inventory_daily,date_key,INT,Foreign key to dim_date
+fact_room_inventory_daily,room_type_id,INT,Foreign key to dim_room_type
+fact_room_inventory_daily,total_rooms_available,INT,Total rooms physically available
+fact_room_inventory_daily,out_of_order_rooms,INT,Rooms blocked for maintenance
+fact_room_inventory_daily,sellable_rooms,INT,Rooms available to be sold (total minus out-of-order)
+fact_room_cost_daily,date_key,INT,Foreign key to dim_date
+fact_room_cost_daily,cost_category_id,INT,Foreign key to dim_cost_category
+fact_room_cost_daily,amount,DECIMAL,Total cost amount for the day
+fact_room_revenue_daily,room_revenue_id,VARCHAR,Primary key for daily room revenue record
+fact_room_revenue_daily,date_key,INT,Foreign key to dim_date
+fact_room_revenue_daily,room_type_id,INT,Foreign key to dim_room_type
+fact_room_revenue_daily,channel_id,INT,Foreign key to dim_channel
+fact_room_revenue_daily,segment_id,INT,Foreign key to dim_guest_segment
+fact_room_revenue_daily,promotion_id,INT,Foreign key to dim_promotion
+fact_room_revenue_daily,rooms_sold,INT,Number of rooms actually sold
+fact_room_revenue_daily,gross_room_revenue,DECIMAL,Revenue before any deductions
+fact_room_revenue_daily,listed_room_revenue,DECIMAL,Revenue based on listed price
+fact_room_revenue_daily,net_room_revenue,DECIMAL,Revenue after commissions and discounts
+fact_guest_review,booking_id,VARCHAR,Foreign key to fact_booking
+fact_guest_review,review_date,DATE,Date when the review was submitted
+fact_guest_review,score,DECIMAL,Rating score given by the guest
+fact_guest_review,review_title,VARCHAR,Title of the review
+fact_guest_review,review_content,TEXT,Full text content of the review
+fact_competitor_price_snapshot_template,snapshot_id,VARCHAR,Primary key for the scraped snapshot
+fact_competitor_price_snapshot_template,scrape_date,DATE,Date when data was scraped
+fact_competitor_price_snapshot_template,checkin_date,DATE,Target check-in date being scraped
+fact_competitor_price_snapshot_template,competitor_name,VARCHAR,Name of the competitor hotel
+fact_competitor_price_snapshot_template,platform,VARCHAR,Scraping platform (Booking.com, Trip.com)
+fact_competitor_price_snapshot_template,room_name,VARCHAR,Scraped name of the room type
+fact_competitor_price_snapshot_template,price_vnd,DECIMAL,Scraped price in VND
+fact_competitor_price_snapshot_template,is_sold_out,BOOLEAN,True if the room is sold out
+mart_profitpar_daily,date_key,INT,Foreign key to dim_date for daily tracking
+mart_profitpar_daily,profitpar,FLOAT,Profit after distribution divided by rooms_available
+mart_profitpar_daily,target_profitpar,INT,Management target for ProfitPAR
+mart_profitpar_daily,gap_to_target_profitpar,FLOAT,Difference between target and actual ProfitPAR
+kpi_monthly_summary,month_number,INT,Primary key representing the month
+kpi_monthly_summary,total_revenue,DECIMAL,Aggregated revenue for the month
+kpi_monthly_summary,average_occupancy_rate,FLOAT,Monthly average room occupancy percentage
+qa_checks_summary,check_name,VARCHAR,Name of the data quality check performed
+qa_checks_summary,failed_rows,INT,Number of rows that failed the data quality check
+qa_checks_summary,status,VARCHAR,Overall status of the QA check

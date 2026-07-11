@@ -1,0 +1,18 @@
+# ETL Agent
+google-cloud-bigquery>=3.11.0
+google-auth>=2.22.0
+pandas>=2.0.0
+watchdog>=3.0.0
+schedule>=1.2.0
+python-dotenv>=1.0.0
+db-dtypes>=1.1.1
+pyarrow>=12.0.0
+
+# Scraper Agent (Booking - confirmed working)
+playwright>=1.40.0
+playwright-stealth>=1.0.6
+
+# Agoda scraper bypass Cloudflare
+cloudscraper>=1.2.71
+beautifulsoup4>=4.12.0
+
