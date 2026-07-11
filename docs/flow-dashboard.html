@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HAIAN DWH Flow Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: oklch(97.5% 0.008 220);
+      --panel: oklch(99% 0.006 220);
+      --panel-2: oklch(95.5% 0.012 220);
+      --text: oklch(24% 0.025 232);
+      --muted: oklch(52% 0.028 232);
+      --line: oklch(88% 0.018 220);
+      --accent: oklch(54% 0.12 224);
+      --ok: oklch(58% 0.13 155);
+      --warn: oklch(66% 0.14 72);
+      --bad: oklch(58% 0.16 28);
+      --unknown: oklch(58% 0.04 245);
+      --shadow: 0 14px 38px oklch(24% 0.025 232 / 0.08);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+      background: oklch(98.5% 0.007 220 / 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .button {
+      border: 1px solid oklch(80% 0.04 224);
+      background: var(--accent);
+      color: oklch(98% 0.006 224);
+      border-radius: 7px;
+      min-height: 36px;
+      padding: 0 13px;
+      cursor: pointer;
+      font-weight: 650;
+      transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+    }
+
+    .button:hover {
+      background: oklch(49% 0.13 224);
+    }
+
+    .button:active {
+      transform: translateY(1px);
+    }
+
+    .timestamp {
+      color: var(--muted);
+      font-size: 12px;
+      min-width: 210px;
+      text-align: right;
+    }
+
+    .content {
+      padding: 22px 24px 30px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(330px, 0.9fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 15px 16px 12px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .panel-subtitle {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+      grid-column: 1 / -1;
+    }
+
+    .summary {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px;
+      min-height: 86px;
+    }
+
+    .summary strong {
+      display: block;
+      font-size: 20px;
+      margin-top: 8px;
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    .summary span {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .flow {
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .node {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 11px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 8px;
+      padding: 11px 12px;
+      min-height: 64px;
+    }
+
+    .node-index {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: oklch(90% 0.04 224);
+      color: oklch(34% 0.08 224);
+      font-weight: 750;
+      font-size: 12px;
+    }
+
+    .node h3 {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .node p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .connector {
+      width: 1px;
+      height: 16px;
+      background: var(--line);
+      margin-left: 31px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 26px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: var(--panel);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--unknown);
+    }
+
+    .ok .dot {
+      background: var(--ok);
+    }
+
+    .warn .dot {
+      background: var(--warn);
+    }
+
+    .bad .dot {
+      background: var(--bad);
+    }
+
+    .side {
+      display: grid;
+      gap: 18px;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.2fr);
+      border-bottom: 1px solid var(--line);
+      min-height: 42px;
+      align-items: center;
+      gap: 12px;
+      padding: 0 16px;
+    }
+
+    .kv:last-child {
+      border-bottom: 0;
+    }
+
+    .kv span:first-child {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .kv span:last-child {
+      overflow-wrap: anywhere;
+      text-align: right;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      max-height: 380px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--panel-2);
+      position: sticky;
+      top: 0;
+    }
+
+    td {
+      font-size: 13px;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .logs {
+      margin: 0;
+      padding: 14px 16px;
+      max-height: 420px;
+      overflow: auto;
+      white-space: pre-wrap;
+      color: oklch(28% 0.025 232);
+      background: oklch(94.5% 0.01 220);
+      line-height: 1.45;
+    }
+
+    .error {
+      margin: 12px 16px;
+      border: 1px solid oklch(80% 0.08 28);
+      background: oklch(96% 0.03 28);
+      color: oklch(42% 0.12 28);
+      border-radius: 7px;
+      padding: 10px 12px;
+      line-height: 1.4;
+    }
+
+    .empty {
+      padding: 18px 16px;
+      color: var(--muted);
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 1040px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .actions {
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .timestamp {
+        min-width: 0;
+        text-align: left;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .node {
+        grid-template-columns: 34px minmax(0, 1fr);
+      }
+
+      .node .badge {
+        grid-column: 2;
+        justify-self: start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <h1>HAIAN DWH Flow Dashboard</h1>
+        <span>Hiển thị flow đang chạy từ Docker, Airflow, repo files và runtime logs thật.</span>
+      </div>
+      <div class="actions">
+        <button class="button" id="refreshButton" type="button">Refresh</button>
+        <div class="timestamp" id="timestamp">Đang tải dữ liệu thật...</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="summary-grid" id="summaryGrid" aria-label="Tổng quan runtime"></section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2 class="panel-title">Runtime Flow</h2>
+          <div class="panel-subtitle" id="entryCommand">Đang đọc DAG command</div>
+        </div>
+        <div class="flow" id="flowNodes"></div>
+      </section>
+
+      <aside class="side">
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">Airflow</h2>
+            <div class="panel-subtitle">Từ container hiện tại</div>
+          </div>
+          <div id="airflowPanel"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">Registered Tools</h2>
+            <div class="panel-subtitle" id="toolsSource">agents/haian_dwh_agent/tools.py</div>
+          </div>
+          <div id="toolsPanel"></div>
+        </section>
+      </aside>
+
+      <section class="panel wide">
+        <div class="panel-header">
+          <h2 class="panel-title">Bronze CSV Files</h2>
+          <div class="panel-subtitle" id="csvDirectory">Data/Raw</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>File</th>
+                <th>Rows approx</th>
+                <th>Size</th>
+                <th>Modified UTC</th>
+              </tr>
+            </thead>
+            <tbody id="csvRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel wide">
+        <div class="panel-header">
+          <h2 class="panel-title">Airflow Logs</h2>
+          <div class="panel-subtitle">docker compose logs --tail=80 airflow-standalone</div>
+        </div>
+        <pre class="logs mono" id="logsPanel">Đang tải logs...</pre>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const flowDescriptions = {
+      "Airflow DAG": "Scheduler chạy DAG haian_competitor_price_pipeline lúc 02:00 hoặc khi trigger thủ công.",
+      "ADK Agent CLI": "BashOperator gọi python -m agents.haian_dwh_agent.cli với goal hiện tại.",
+      "Google ADK Runner": "Runner tạo session in-memory và gửi goal cho root_agent.",
+      "Deterministic Tools": "Agent chỉ hành động qua tools.py: scraper, DQ, sync, full sync, mart.",
+      "OTA Scrapers": "Booking/Ivivu scraper dùng Playwright để thu thập giá đối thủ.",
+      "Bronze CSV": "Data/Raw/*.csv là trạng thái đầu vào thật mà ETL đọc.",
+      "ETL BigQuery Silver": "ETLAgent kiểm tra business rules, FK và append dòng mới lên BigQuery.",
+      "Gold Data Marts": "create_data_marts tạo hoặc refresh các BigQuery views phân tích."
+    };
+
+    const stateClass = (value) => {
+      const text = String(value || "").toLowerCase();
+      if (["running", "ok", "up"].some((item) => text.includes(item))) return "ok";
+      if (["paused", "warning", "unknown"].some((item) => text.includes(item))) return "warn";
+      if (["error", "failed", "unavailable", "down"].some((item) => text.includes(item))) return "bad";
+      return "";
+    };
+
+    const formatBytes = (bytes) => {
+      const value = Number(bytes || 0);
+      if (value < 1024) return `${value} B`;
+      if (value < 1024 * 1024) return `${(value / 1024).toFixed(1)} KB`;
+      return `${(value / (1024 * 1024)).toFixed(1)} MB`;
+    };
+
+    const escapeHtml = (value) => String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+    function renderSummary(data) {
+      const container = document.getElementById("summaryGrid");
+      const containerState = data.runtime?.container?.state || "unknown";
+      const paused = data.airflow?.isPaused;
+      const dagState = paused === true ? "paused" : paused === false ? "active" : "unknown";
+      const cards = [
+        ["Container", containerState],
+        ["DAG", dagState],
+        ["CSV files", data.csv?.count ?? 0],
+        ["Tools", data.tools?.registered?.length ?? 0]
+      ];
+      container.innerHTML = cards.map(([label, value]) => `
+        <article class="summary">
+          <span>${escapeHtml(label)}</span>
+          <strong>${escapeHtml(value)}</strong>
+        </article>
+      `).join("");
+    }
+
+    function renderFlow(data) {
+      document.getElementById("entryCommand").textContent = data.flow?.entryCommand || "Không đọc được bash_command";
+      const nodes = data.flow?.nodes || [];
+      document.getElementById("flowNodes").innerHTML = nodes.map((name, index) => {
+        const isLast = index === nodes.length - 1;
+        const badgeText = index === 0 ? (data.runtime?.container?.state || "unknown") : "configured";
+        const badgeClass = index === 0 ? stateClass(badgeText) : "ok";
+        return `
+          <article class="node">
+            <div class="node-index">${index + 1}</div>
+            <div>
+              <h3>${escapeHtml(name)}</h3>
+              <p>${escapeHtml(flowDescriptions[name] || "Được đọc từ flow metadata hiện tại.")}</p>
+            </div>
+            <span class="badge ${badgeClass}"><span class="dot"></span>${escapeHtml(badgeText)}</span>
+          </article>
+          ${isLast ? "" : '<div class="connector" aria-hidden="true"></div>'}
+        `;
+      }).join("");
+    }
+
+    function renderAirflow(data) {
+      const airflow = data.airflow || {};
+      const container = data.runtime?.container || {};
+      const rows = [
+        ["Container", `${container.name || "unknown"} (${container.state || "unknown"})`],
+        ["Ports", (container.ports || []).join(", ") || "Không đọc được"],
+        ["DAG ID", airflow.dagId || "Không đọc được"],
+        ["Paused", airflow.isPaused === null || airflow.isPaused === undefined ? "Không đọc được" : String(airflow.isPaused)],
+        ["Owner", airflow.owner || "Không đọc được"],
+        ["DAG file", airflow.fileloc || "Không đọc được"]
+      ];
+      const error = airflow.error || container.error;
+      document.getElementById("airflowPanel").innerHTML = `
+        ${error ? `<div class="error">${escapeHtml(error)}</div>` : ""}
+        ${rows.map(([key, value]) => `<div class="kv"><span>${escapeHtml(key)}</span><span class="mono">${escapeHtml(value)}</span></div>`).join("")}
+      `;
+    }
+
+    function renderTools(data) {
+      const tools = data.tools || {};
+      document.getElementById("toolsSource").textContent = tools.source || "Không đọc được source";
+      if (tools.error) {
+        document.getElementById("toolsPanel").innerHTML = `<div class="error">${escapeHtml(tools.error)}</div>`;
+        return;
+      }
+      const registered = tools.registered || [];
+      document.getElementById("toolsPanel").innerHTML = registered.length
+        ? registered.map((name) => `<div class="kv"><span>Tool</span><span class="mono">${escapeHtml(name)}</span></div>`).join("")
+        : '<div class="empty">Không có tool nào được phát hiện.</div>';
+    }
+
+    function renderCsv(data) {
+      const csv = data.csv || {};
+      document.getElementById("csvDirectory").textContent = csv.directory || "Data/Raw";
+      const rows = csv.files || [];
+      document.getElementById("csvRows").innerHTML = rows.length
+        ? rows.map((file) => `
+          <tr>
+            <td class="mono">${escapeHtml(file.name)}</td>
+            <td>${escapeHtml(file.rowsApprox ?? "n/a")}</td>
+            <td>${escapeHtml(formatBytes(file.size))}</td>
+            <td class="mono">${escapeHtml(file.modified)}</td>
+          </tr>
+        `).join("")
+        : '<tr><td colspan="4" class="empty">Không tìm thấy CSV trong Data/Raw.</td></tr>';
+    }
+
+    function renderLogs(data) {
+      const logs = data.logs || {};
+      document.getElementById("logsPanel").textContent = logs.error || logs.tail || "Không có log để hiển thị.";
+    }
+
+    async function refresh() {
+      const button = document.getElementById("refreshButton");
+      button.disabled = true;
+      button.textContent = "Refreshing";
+      try {
+        const response = await fetch("/api/status", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        renderSummary(data);
+        renderFlow(data);
+        renderAirflow(data);
+        renderTools(data);
+        renderCsv(data);
+        renderLogs(data);
+        document.getElementById("timestamp").textContent = `Updated ${data.generatedAt}`;
+      } catch (error) {
+        document.getElementById("timestamp").textContent = "Không tải được /api/status";
+        document.getElementById("logsPanel").textContent = String(error);
+      } finally {
+        button.disabled = false;
+        button.textContent = "Refresh";
+      }
+    }
+
+    document.getElementById("refreshButton").addEventListener("click", refresh);
+    refresh();
+    window.setInterval(refresh, 30000);
+  </script>
+</body>
+</html>

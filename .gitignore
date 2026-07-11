@@ -1,7 +1,48 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Environment and credentials
 .env
+**/.env
 *.json
-Data.zip
+!.env.example
+!*.example.json
+
+# Airflow / local runtime
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+logs/
 agents/logs/
 *.log
+
+# Local analysis/tooling output
+.understand-anything/
+
+# Data artifacts and generated exports
+Data.zip
+Data/Raw/*.csv
+Data/Processed/
+Data/Temp/
+*.parquet
+*.arrow
+*.db
+*.sqlite
+*.sqlite3
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/

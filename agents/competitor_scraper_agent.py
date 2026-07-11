@@ -183,6 +183,33 @@ def _print_summary(records: list[dict]) -> None:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# STRUCTURED WRAPPER (for agent tool integration)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def run_all_structured(
+    checkin_dates: list[date] | None = None,
+    dry_run: bool = False,
+    headless: bool = True,
+) -> dict:
+    """Wrapper trả về structured result cho agent tool."""
+    records = run_all(checkin_dates=checkin_dates, dry_run=dry_run, headless=headless)
+    success_count = sum(1 for record in records if record.get("scrape_status") == "success")
+    warning_count = len(records) - success_count
+    return {
+        "tool": "run_competitor_scraper",
+        "status": "ok" if warning_count == 0 else "warning",
+        "summary": f"Scraper finished with {len(records)} records",
+        "data": {
+            "record_count": len(records),
+            "success_count": success_count,
+            "warning_count": warning_count,
+        },
+        "errors": [],
+        "next_recommendations": [],
+    }
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # CLI ENTRY POINT
 # ══════════════════════════════════════════════════════════════════════════════
 

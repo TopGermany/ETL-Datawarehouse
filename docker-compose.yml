@@ -22,7 +22,7 @@ services:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       # Đè đường dẫn Windows trong .env bằng đường dẫn Linux của Container
       - CSV_DATA_DIR=/opt/airflow/Data/Raw
-      - GOOGLE_CREDENTIALS_PATH=/opt/airflow/agents/haian-dwh-project-2254500c760c.json
+      - GOOGLE_CREDENTIALS_PATH=/opt/airflow/agents/haian-dwh-project-3ded89ea6dc8.json
       - LOG_FILE=/opt/airflow/agents/logs/etl_agent.log
       - PYTHONPATH=/opt/airflow
     command: >

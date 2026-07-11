@@ -17,6 +17,9 @@ Cách dùng:
   python etl_agent.py --file <tên.csv> # Sync một file cụ thể
 """
 
+from __future__ import annotations
+
+import json
 import os
 import sys
 
@@ -182,7 +185,7 @@ class SchemaRegistry:
     }
 
     # ── BigQuery schema definitions (field name → BQ type) ───────────────────
-    BQ_SCHEMAS: dict[str, list[bigquery.SchemaField]] = {}  # Lazy-built bên dưới
+    BQ_SCHEMAS: dict[str, list] = {}  # Lazy-built bên dưới
 
     @classmethod
     def get_pk(cls, table_name: str) -> list[str]:
@@ -258,6 +261,14 @@ class BigQueryUploader:
         """Khởi tạo BigQuery client (lazy initialization)."""
         if self._client is None:
             if self.credentials_path and Path(self.credentials_path).exists():
+                credentials_file = Path(self.credentials_path)
+                try:
+                    json.loads(credentials_file.read_text(encoding="utf-8-sig"))
+                except (json.JSONDecodeError, UnicodeDecodeError):
+                    raise ValueError(
+                        "Service Account JSON không hợp lệ hoặc đang rỗng: "
+                        f"{self.credentials_path}. Hãy thay bằng JSON key hợp lệ tải từ Google Cloud."
+                    ) from None
                 creds = service_account.Credentials.from_service_account_file(
                     self.credentials_path,
                     scopes=["https://www.googleapis.com/auth/cloud-platform"],
